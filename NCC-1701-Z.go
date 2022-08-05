@@ -11,7 +11,7 @@ func main() {
 	shufflecards()
 }
 
-func poker(sCards []string) {
+func poker(sCards [53]string) {
 	err := exec.Command("clear").Run()
 	if err != nil {
 		return
@@ -60,7 +60,7 @@ func poker(sCards []string) {
 func shufflecards() {
 	var Cards = []string{"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"}
 	var TypeOfCards = []string{"C", "S", "D", "H"}
-	var ShuffledCards []string
+	var ShuffledCards [53]string
 	var count int
 	var counttype int
 	for i := (len(Cards) * len(TypeOfCards)) - 1; i > 0; i-- {
