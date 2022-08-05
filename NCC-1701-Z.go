@@ -64,7 +64,7 @@ func shufflecards() {
 	var count int
 	var counttype int
 	for i := (len(Cards) * len(TypeOfCards)) - 1; i > 0; i-- {
-		if count%len(Cards)-1 == 0 {
+		if count%len(Cards)-1 == 0 && count != 1{
 			ShuffledCards[i] = Cards[count] + TypeOfCards[counttype]
 			count = 0
 			if counttype != len(TypeOfCards)-1 {
