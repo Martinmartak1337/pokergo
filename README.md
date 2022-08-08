@@ -1,3 +1,3 @@
 # pokergo
-WIP -- soon 
+WIP -- 
 a poker application writen in go...
