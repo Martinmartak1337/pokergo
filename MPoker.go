@@ -45,7 +45,7 @@ func HandSAndFlop(p *[52]string) (*int, *int, *int, *int, *[46]string, *[3]strin
 	InvCards[0] = ""
 	var count int
 	var myhand [2]string
-	for ; CountOfPlayers-1 >= 0; CountOfPlayers-- {
+	for ; CountOfPlayers-1 >= 0; CountOfPlayers-- { // flaud: Why?
 		InvCards[count+1], InvCards[count+2] = p[indexofcard], p[indexofcard+1]
 		count = count + 2
 		indexofcard = indexofcard + 1
