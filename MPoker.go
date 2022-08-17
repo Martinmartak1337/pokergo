@@ -67,8 +67,6 @@ func HandSAndFlop(p *[52]string) (*int, *int, *int, *int, *[46]string, *[3]strin
 		BigBlind = memCount - 2
 	}
 	var PlayersPosition = DealersPosition
-	fmt.Println(InvCards)
-	fmt.Println(p)
 	fmt.Printf("This is your hand:\n %s ", myhand)
 	fmt.Println("\nThis is the flop: \n", flop)
 	return &DealersPosition, &SmallBlind, &BigBlind, &PlayersPosition, &InvCards, &flop, &myhand
